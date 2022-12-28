@@ -13,7 +13,7 @@
         </div>
         <div class="content-btn">
           <button class="btn-register">Create account</button>
-          <button class="btn-login">Sign in</button>
+          <button class="btn-login" @click="login()">Sign in</button>
         </div>        
       </div>
       <div class="center-panel">
@@ -219,6 +219,11 @@ export default {
     },
     addUser(item){
       this.imgUserAdd = item.avatars[0] !== this.imgUserAdd ? item.avatars[0] : item.avatars[1]
+    },
+    login(){
+      this.$router.push({ 
+        name: 'login',
+      })
     }
   }
 }

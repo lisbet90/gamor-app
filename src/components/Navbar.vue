@@ -63,7 +63,6 @@ export default {
     },
     changeTheme(theme){
         this.theme = theme
-        console.log('theme navbar', this.theme)
         this.$emit("updateTheme", this.theme)
     }
   }  

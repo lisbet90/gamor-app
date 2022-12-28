@@ -1,0 +1,2 @@
+email: gamor@gmail.com
+password: gamor*2022
