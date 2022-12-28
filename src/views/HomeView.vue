@@ -1,7 +1,6 @@
 <template>
-  <!-- <div :class="theme == 'dark' ? 'home-dark' : 'home-lihgt'"> -->
-  <div class="home-light">
-    <NavBar :userLogin = "userLogin"/>
+  <div :class="theme === 'dark' ? 'home-dark' : 'home-light'">  
+    <NavBar :userLogin = "userLogin" @updateTheme="changeTheme"/>
     <h1 class="home-title" align="center">Gamor</h1>
     <MainSection :theme = "theme"/>
     <CategorySection :theme = "theme"/>
@@ -24,12 +23,16 @@ export default {
   data () {
     return {
      userLogin: '' ,
-     theme: ''
+     theme: 'dark'
     }
   },
-  created(){
-    this.userLogin = Cookies.get('userLogin');
-    console.log('this.theme', this.theme)
+  created (){
+      this.userLogin = Cookies.get('userLogin');
+  },
+  methods:{
+    changeTheme(event){
+      this.theme = event
+    }
   }
 }
 </script>

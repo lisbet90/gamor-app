@@ -1,6 +1,5 @@
 <template>
-  <!-- <div :class="theme == 'dark' ? 'category-section-dark' : 'category-section-light'"> -->
-  <div class="category-section-light">
+  <div :class="theme == 'dark' ? 'category-section-dark' : 'category-section-light'">
     <h3 class="title-section">Trending Categories</h3>
     <div class="card-category" v-for="(item, index) in listGame" :key="index">
       <img :src="item.img" class="category-img">

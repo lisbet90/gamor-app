@@ -1,6 +1,5 @@
 <template>
-  <!-- <nav :class="theme == 'dark' ? 'navbar-dark' : 'navbar-lihgt'"> -->
-  <nav class="navbar-light">
+  <nav :class="theme === 'dark' ? 'navbar-dark' : 'navbar-light'">
     <ul class="navbar-menu">
       <li class="menu-icon" @click="open = !open"><a><i class="fa fa-bars"></i></a></li>
       <div class="dropdown-menu" :class="open ? 'dropdown-menu-open':'dropdown-menu-close'">
@@ -50,7 +49,7 @@ export default {
   data(){
     return{
       open: false,
-      theme: 'light'
+      theme: 'dark'
     }
   },
   created(){
@@ -64,6 +63,8 @@ export default {
     },
     changeTheme(theme){
         this.theme = theme
+        console.log('theme navbar', this.theme)
+        this.$emit("updateTheme", this.theme)
     }
   }  
 }

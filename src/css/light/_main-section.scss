@@ -162,7 +162,7 @@
                 width: 90%;
             }             
             .header{
-                padding: 30px 50px 0px;
+                padding: 15px 50px 0px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 24px;
                 color: #ffffff;
@@ -180,7 +180,10 @@
                     padding: 30px 10px 0px;
                 }  
                 h4{
-                    margin: 0px;
+                    margin-bottom: 0px;
+                    @media only screen and (max-width: 980px){
+                        margin: 0px;
+                    }
                 }
                 p{
                     font-size: 16px;
@@ -238,8 +241,11 @@
             .galery{
                 margin-top: 10px;
                 height: 387px;
-                @media only screen and (max-width: 980px){
+                @media only screen and (max-width: 1060px){
                     height: 370px;
+                }
+                @media only screen and (max-width: 980px){
+                    height: 350px;
                 }
                 @media only screen and (max-width: 760px){
                     height: 387px;
@@ -249,7 +255,10 @@
                 }
                 img {
                     height: 100%;
-                    @media only screen and (max-width: 816px){
+                    /* @media only screen and (max-width: 980px){
+                        height: 92%;
+                    } */
+                    @media only screen and (max-width: 797px){
                         height: 92%;
                     }
                 }
@@ -274,6 +283,14 @@
                     @media only screen and (max-width: 816px){
                         top:-250px; 
                         left:-95px;
+                    }
+                    @media only screen and (max-width: 760px){
+                        top:-270px; 
+                        left:-120px;
+                    }
+                    @media only screen and (max-width: 280px){
+                        top:-250px; 
+                        left:-90px;
                     }
                 }
                 .img-2{
@@ -300,6 +317,14 @@
                     }
                     @media only screen and (max-width: 816px){
                         top:-340px; 
+                        left:95px;
+                    }
+                    @media only screen and (max-width: 760px){
+                        top:-360px; 
+                        left:115px;
+                    }
+                    @media only screen and (max-width: 280px){
+                        top:-350px; 
                         left:95px;
                     }
                 }

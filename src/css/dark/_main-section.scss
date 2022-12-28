@@ -180,7 +180,10 @@
                     padding: 30px 10px 0px;
                 }  
                 h4{
-                    margin: 0px;
+                    margin-bottom: 0px;
+                    @media only screen and (max-width: 980px){
+                        margin: 0px;
+                    }
                 }
                 p{
                     font-size: 16px;
@@ -252,6 +255,12 @@
                     @media only screen and (max-width: 816px){
                         height: 92%;
                     }
+                    @media only screen and (max-width: 760px){
+                        height: 95%;
+                    }
+                    @media only screen and (max-width: 280px){
+                        height: 92%;
+                    }
                 }
                 .img-1{
                     width: 50px; 
@@ -274,6 +283,14 @@
                     @media only screen and (max-width: 816px){
                         top:-250px; 
                         left:-95px;
+                    }
+                    @media only screen and (max-width: 760px){
+                        top:-270px; 
+                        left:-120px;
+                    }
+                    @media only screen and (max-width: 280px){
+                        top:-250px; 
+                        left:-90px;
                     }
                 }
                 .img-2{
@@ -300,6 +317,14 @@
                     }
                     @media only screen and (max-width: 816px){
                         top:-340px; 
+                        left:95px;
+                    }
+                    @media only screen and (max-width: 760px){
+                        top:-360px; 
+                        left:115px;
+                    }
+                    @media only screen and (max-width: 280px){
+                        top:-350px; 
                         left:95px;
                     }
                 }

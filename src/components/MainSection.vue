@@ -1,6 +1,5 @@
 <template>
-  <!-- <div :class="theme == 'dark' ? 'main-section-dark' : 'main-section-lihgt'"> -->
-  <div class="main-section-light">
+  <div :class="theme === 'dark' ? 'main-section-dark' : 'main-section-light'">
     <div class="principal-panel">
       <div class="left-panel">
         <div class="content-principal">
@@ -31,13 +30,22 @@
             <span>{{time}}</span>
           </div>
         </div>
-        <div class="galery" align="center">
+        <div class="galery" align="center" v-if="theme === 'dark'">
           <img src="../assets/users/01.png"/>
           <div class="img-1">
             <img src="../assets/users/03.png" style="height: 100%;"/>
           </div>
           <div class="img-2">
             <img src="../assets/users/04.png" style="height: 100%"/>
+          </div>                
+        </div>
+        <div class="galery" align="center" v-else>
+          <img src="../assets/users/02.png"/>
+          <div class="img-1">
+            <img src="../assets/users/03.png" style="height: 100%;"/>
+          </div>
+          <div class="img-2">
+            <img src="../assets/users/01.png" style="height: 100%"/>
           </div>                
         </div>
       </div>
@@ -180,11 +188,12 @@ export default {
   created () {
     setInterval(this.getNow, 1000)
     this.listUsers = this.users
+    console.log('main section', this.theme)
   },
   methods: {
     getNow() {
       const today = new Date();
-      this.time = today.getHours() + ":" + today.getMinutes();      
+      this.time = today.getHours() + ":" + (today.getMinutes() < 10 ? '0'+today.getMinutes() : today.getMinutes());      
     },
     search(){
       let temp = []
