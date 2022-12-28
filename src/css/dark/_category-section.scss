@@ -1,4 +1,4 @@
-.category-section{
+.category-section-dark{
     padding: 50px 0px;
     width: 70%;
     margin: auto;
@@ -7,6 +7,12 @@
     }
     @media only screen and (max-width: 1510px){
         width: 95%;
+    }
+    @media only screen and (max-width: 760px){
+        width: 70%;
+    }
+    @media only screen and (max-width: 560px){
+        width: 90%;
     }
     .title-section{
         color: white;
@@ -27,8 +33,12 @@
         @media only screen and (max-width: 1050px){
             width: 23.8%;
         }
-        @media only screen and (max-width: 876px){
-            width: 23.6%;
+        @media only screen and (max-width: 760px){
+            width: 45%;
+        }
+        @media only screen and (max-width: 450px){
+            width: 70%;
+           margin-left: 30px;
         }
         .category-img{
             border-radius: 10px;
@@ -72,10 +82,6 @@
                     }
                 }
             }            
-        }
-        .div-all-category{
-            padding-top: 20px;
-            padding-left: 20px;
         }
     }
     .card-category:hover{

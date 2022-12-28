@@ -1,4 +1,10 @@
-@import "navbar";
-@import "home";
-@import "main-section";
-@import "category-section";
+@import "./dark/navbar";
+@import "./dark/home";
+@import "./dark/main-section";
+@import "./dark/category-section";
+
+@import "./light/navbar";
+@import "./light/home";
+@import "./light/main-section";
+@import "./light/category-section";
+@import "login";

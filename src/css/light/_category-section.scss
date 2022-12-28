@@ -1,0 +1,93 @@
+.category-section-light{
+    padding: 50px 0px;
+    width: 70%;
+    margin: auto;
+    @media only screen and (max-width: 1720px){
+        width: 80%;
+    }
+    @media only screen and (max-width: 1510px){
+        width: 95%;
+    }
+    @media only screen and (max-width: 760px){
+        width: 70%;
+    }
+    @media only screen and (max-width: 560px){
+        width: 90%;
+    }
+    .title-section{
+        color: #1b1f28;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+    }
+    .card-category{
+        width: 24.2%;
+        border-radius: 10px;
+        background-color: #ffffff;      
+        display: inline-block;        
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 1782px){
+            width: 24%;
+        }
+        @media only screen and (max-width: 1050px){
+            width: 23.8%;
+        }
+        @media only screen and (max-width: 760px){
+            width: 45%;
+        }
+        @media only screen and (max-width: 450px){
+            width: 70%;
+           margin-left: 30px;
+        }
+        .category-img{
+            border-radius: 10px;
+            max-width: 100%; 
+            max-height: 100%;
+            opacity: 0;
+        }        
+        .div-encima{
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            padding: 15px 0px;
+            @media only screen and (max-width: 980px){
+                padding: 5px 0px;
+            }
+            .div-info{
+                width: 70%;
+                margin: auto;
+                @media only screen and (max-width: 980px){
+                    width: 90%;
+                }
+                .category-separator{
+                    color: #7c1bdc;
+                    font-size: 20px;
+                }
+                .category-id{
+                    margin-left: 5px;
+                    color: #c5c4c4;
+                    font-size: 11px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .category-title{
+                    margin-left: 5px;
+                    margin-top: 15px;
+                    color: #22262f;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: Arial, Helvetica, sans-serif;
+                    @media only screen and (max-width: 980px){
+                        margin-top: 10px;
+                    }
+                }
+            }            
+        }
+    }
+    .card-category:hover{
+        background-color: #f3f3f3; 
+        img {
+            opacity: 0.5;
+        }
+    }       
+}
